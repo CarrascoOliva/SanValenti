@@ -8,5 +8,4 @@ function changeImage() {
     }
 }
 
-// Cambia la imagen cada 2 segundos
 setInterval(changeImage, 2000);

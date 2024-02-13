@@ -19,8 +19,8 @@ body {
 
 .header {
   text-align: justify;
-  max-width: 800px; /* Limita el ancho máximo del contenedor a 800px */
-  margin: 0 auto; /* Centra el contenedor en la página */
+  max-width: 800px;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   border-radius: 10px;
@@ -49,6 +49,7 @@ p {
 .gallery img.fade {
   opacity: 1;
 }
+
 
 @media screen and (max-width: 600px) {
   body {
