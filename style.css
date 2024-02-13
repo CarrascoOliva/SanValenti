@@ -21,7 +21,7 @@ body {
   text-align: justify;
   max-width: 800px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ffffffb3;
   padding: 10px;
   border-radius: 10px;
   
@@ -49,7 +49,16 @@ p {
 .gallery img.fade {
   opacity: 1;
 }
-
+#countdown {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  background-color: #ffffffb3;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 600px) {
   body {
