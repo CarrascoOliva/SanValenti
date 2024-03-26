@@ -1,7 +1,7 @@
 
 const images = document.querySelectorAll('.gallery img');
 const countdownContainer = document.getElementById('countdown');
-const endDate = new Date('2024-03-26T13:00:00'); // Asegúrate de ajustar el año
+const endDate = new Date('2024-03-26T16:00:00'); // Asegúrate de ajustar el año
 
 
 let currentIndex = 0;
