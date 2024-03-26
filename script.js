@@ -1,7 +1,7 @@
 
 const images = document.querySelectorAll('.gallery img');
 const countdownContainer = document.getElementById('countdown');
-const endDate = new Date('2024-03-26T08:40:00'); // Asegúrate de ajustar el año
+const endDate = new Date('2024-03-26T13:00:00'); // Asegúrate de ajustar el año
 
 
 let currentIndex = 0;
@@ -12,10 +12,21 @@ function changeImage() {
         currentIndex++;
     }
 }
+let countdownInterval = setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
     const now = new Date();
-    const difference = endDate - now;
+    let difference = endDate - now;
+
+    if (difference < 0) {
+        difference = 0;
+    }
+
+    if (difference === 0) {
+        countdownContainer.innerText = "¡Hola bonitaaa!";
+        clearInterval(countdownInterval); // Detener el intervalo
+        return;
+    }
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
