@@ -1,7 +1,7 @@
 
 const images = document.querySelectorAll('.gallery img');
 const countdownContainer = document.getElementById('countdown');
-const endDate = new Date('2024-11-31T09:15:30'); // Fecha
+const endDate = new Date('2024-10-31T09:15:30'); // Fecha
 
 
 let currentIndex = 0;
